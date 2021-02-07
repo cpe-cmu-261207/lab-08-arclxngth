@@ -23,7 +23,7 @@ function calculate_gpa(data){
 
   if(credit == 0) gpa = 0;
 
-  data.gpax = gpa;
+  data.gpax = gpa.toFixed(2);
 }
 
 app.get("/", (req, res) => {
